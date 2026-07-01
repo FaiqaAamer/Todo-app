@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fef6e4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 380px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00796b;
+  font-weight: 600;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #b2dfdb;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  background: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #00796b;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  border: none;
+  background: #5c6bc0;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-input button:hover {
+  background: #3949ab;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: #f1f8e9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #2e7d32;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+ul li span {
+  flex: 1;              
+  margin-left: 10px;     
+}
+
+ul li input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #00796b;
+}
+
+ul li .delete {
+  background: #ef5350;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+ul li .delete:hover {
+  background: #d32f2f;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.task-counter {
+  text-align: center;
+  margin-bottom: 20px; 
+  font-weight: 500;
+  color: #00796b;
+}
+
+.todo-input {
+  display: flex;
+  margin-top: 15px;
+}
